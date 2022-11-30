@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+    --firstcolor: #2761ff;
+    --secondcolor: #bce0f7;
+    --lightcolor: #ffffff;
+    --bgcolor1: #171a1c;
+    --bgcolor2: #22282a;
+    --padding: 8%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Inscription{
+    width: 100vw;
+    height: 100vh;
+    background-color: #171a1c;
+}
+
+nav{ 
+    padding-top: 2rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8rem;
+    margin-left: 7.1rem;
+}
+
+
+.myweb{
+    font-size: 2.2rem;
+    color: var(--lightcolor);
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+span{
+    color: var(--firstcolor);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 120px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--lightcolor );
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color: #2761ff;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+
+.right{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-left: var(--padding);
+    flex-direction: column;
+   
+}
+
+
+.account{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    margin-right: 70px;
+    
+}
+
+.account h2{
+    font-size: 1rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.account a{
+    transition: 0.4s;
+}
+
+.account a:hover{
+    color: #bce0f7;
+}
+.create h1{
+    margin-top: 10px;
+    font-size: 3rem;
+    color: #2761ff;
+}
+form{
+    display: flex;
+
+}
+
+.left1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.right1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    margin-top: 30px;
+
+}
+
+.label-firstname label, .label-email label, .label-create label, .label-lastname label, .label-adress label, .label-confirme label{
+    font-size: 1.4rem;
+    color: #ffffff;
+  
+}
+
+.First-name input, .Email input, .Create-password input, .Last-name input, .Adress input, .Confirme-password input{
+    width: 70%;
+    height: 40px;
+    background-color: var(--lightcolor);
+    border: 0;
+    padding: 15px;
+    color: var(--bgcolor1);
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.chekbox{
+    margin-top: 20px;
+}
+
+.chekbox label{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.social-media{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn label{
+    margin-left: 10px;
+}
+
+
+.social-media{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+
+.btnf, .btnt{
+    display: flex;
+    justify-content: center;
+    
+    background-color: transparent;
+    color: var(--lightcolor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    display: inline-block;
+  
+    border: 2px solid var(--firstcolor);
+    transition: 0.4s;
+}
+
+.btnf:hover, .btnt:hover{
+    background-color: var(--firstcolor);
+    border: 2px solid transparent;
+}
+
+.btn svg{
+    width: 1.1rem;
+    fill: var(--firstcolor);
+}
+
+.btn:hover svg{
+    fill: var(--lightcolor);
+}
+
+.btn-2 button{
+    padding: 14px 60px;
+    font-size: 18px;
+    background-color: #2761ff;
+    cursor: pointer;
+    color: var(--lightcolor);
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid transparent;
+}
+
+.chekbox a{
+    color: #2761ff;
+}
+
+.account a{
+    color: #2761ff;
+}
+
