@@ -16,7 +16,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-  
+    
 }
 
 .home{
@@ -64,25 +64,32 @@ nav ul li a {
     color: var(--lightcolor );
     text-transform: capitalize;
     transition: 0.4s;
+
 }
 
 nav ul li a:hover{
     color: #2761ff;
 }
 
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.line {
+  width: 1.5rem;
+  height: 5px;
+  background-color: var(--secondcolor);
+  border-radius: 20px;
+}
+
 
 .content{
-    
     color: var(--lightcolor);
     height: 100vh;
-    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    
     align-items: center;
-    
-
-    
 }
 
 .icon{
@@ -101,14 +108,19 @@ nav ul li a:hover{
 }
 
 .section-right{
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: 50%;
+
     
 }
 
 .section-right img{
     width: 70%;
-    margin-left: 150px;
-
+    border-radius: 50%;
+    object-fit: cover;
+    width: 25rem;
 }
 
 .container-texte h1{ 
@@ -132,6 +144,8 @@ nav ul li a:hover{
     gap: 10px;
     margin-top: 10px;
 }
+
+
 .btn1{
     background-color: var(--firstcolor);
     color: var(--lightcolor);
@@ -148,6 +162,7 @@ nav ul li a:hover{
 .btn1:hover{
     background-color: transparent;
     border: 2px solid var(--firstcolor);
+    box-shadow: 0 0 10px #2761ff;
 
 }
 
@@ -174,7 +189,7 @@ nav ul li a:hover{
 .btn2:hover{
     background-color: transparent;
     border: 2px solid var(--firstcolor);
-
+    box-shadow: 0 0 10px #2761ff;
 }
 
 
@@ -232,27 +247,26 @@ nav ul li a:hover{
     display: flex; 
     justify-content: space-between;
     margin-top: 3rem;
-    width: 70%;
-    
-   
+    width: 70%;   
+}
+
+.con-service{
+    margin-left: 3%;
+    width: 30%;
+    min-height: 21rem;
+    border-radius: 20px;
+    background-color: var(--bgcolor2);
+    flex-direction: column;
+    transition: all 0.4s;
+    color: var(--lightcolor);
+    cursor: pointer;
 }
 
 .con-service:hover{
     transform: scale(1.1);
     background-color: var(--lightcolor);
     color: #171a1c;
-}
-
-.con-service{
-    margin-left: 3%;
-    width: 30%;
-    height: 20rem;
-    border-radius: 20px;
-    background-color: var(--bgcolor2);
-    flex-direction: column;
-    transition: all 0.5s;
-    color: var(--lightcolor);
-    
+    box-shadow: 0 0 30px var(--firstcolor);
 }
 
 .con-icon svg{
@@ -275,10 +289,12 @@ nav ul li a:hover{
     margin-left: 5%;
 }
 
+
 .con-text p{
     margin-top: 10px;
     margin-left: 5%; 
     margin-right: 5%;
+    margin-bottom: 10px;
 }
 
 
@@ -350,6 +366,7 @@ nav ul li a:hover{
 .btn3:hover{
     background-color: transparent;
     border: 2px solid var(--firstcolor);
+    box-shadow: 0 0 10px #2761ff;
 
 }
 
@@ -410,6 +427,7 @@ nav ul li a:hover{
     height: 40px;
 }
 
+
 .numero-icon{
     width: 3rem;
     fill: var(--lightcolor);
@@ -440,12 +458,15 @@ nav ul li a:hover{
     height: 60px;
     background-color: #22282a;
     border: 0;
-
     padding: 15px;
     color: var(--lightcolor);
     font-size: 18px;
     border-radius: 6px;
+}
 
+.name:hover, .email2:hover, .message:hover{
+    box-shadow: 0 0 10px #2761ff;
+    border-radius: 6px;
 }
 
 .email2{
@@ -507,6 +528,7 @@ nav ul li a:hover{
 .up:hover {
     border: 2px solid var(--bgcolor2);
     background-color: var(--firstcolor);
+    box-shadow: 0 0 10px var(--lightcolor);
 }
 
 .up svg:hover{
@@ -518,11 +540,119 @@ nav ul li a:hover{
         flex-direction: column-reverse;
     }
 
-    .section-right{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .section-right img{
+        width: 15rem;
     }
 
+    .section-left{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .menu {
+    display: flex;
+  }
+    nav ul {
+    width: 100vw;
+    height: calc(100vh - 64px);
+    background-color: white;
+    position: absolute;
+    top: 64px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+  }
+
+  nav ul li a{
+    color: #171a1c;
+  }
+
+   .upa-home{
+    display: none;
+   }
+
+  .services{
+    padding-top: 4rem;
+    height: 150rem;
+
+  }
+
+  .s-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .con-service{
+    margin-left: 3%;
+    width: 90%;
+    min-height: 15rem;
+    border-radius: 20px;
+    background-color: var(--bgcolor2);
+    flex-direction: column;
+    transition: all 0.4s;
+    color: var(--lightcolor);
+    cursor: pointer;
+  }
+
+  .about-me{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     
+  }
+
+  .left-section{
+    display: none;
+  }
+
+  .right-section{
+   width: 100%; 
+   flex-direction: column;
+   display: flex;
+   align-items: center;  
+  }
+
+  .right-section p{
+    text-align: center;
+  }
+
+  .contact-me{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    gap:0;
+  }
+
+  .cleft-section{
+    margin-left: 0;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+   .cright-section{
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+
+
 }

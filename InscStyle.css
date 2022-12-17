@@ -180,14 +180,12 @@ form {
 .btnt {
   display: flex;
   justify-content: center;
-
   background-color: transparent;
   color: var(--lightcolor);
   text-decoration: none;
   font-weight: bold;
   padding: 0.8rem 2rem;
   display: inline-block;
-
   border: 2px solid var(--firstcolor);
   transition: 0.4s;
 }
@@ -195,12 +193,12 @@ form {
 .btnf:hover,
 .btnt:hover {
   background-color: var(--firstcolor);
-  border: 2px solid transparent;
 }
 
 .btn svg {
   width: 1.1rem;
   fill: var(--firstcolor);
+  
 }
 
 .btn:hover svg {
